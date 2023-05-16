@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Inter,system-ui!important;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.converter {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 10px 20px #0000000d;
+    border-radius: 15px;
+    width: 1000px;
+}
+
+.converter > input, .converter > div {
+  border: 1px solid rgba(0,0,0,.1);
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 10px;
+  letter-spacing: 1.3px;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.output-emojis {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.output-emojis > p:hover {
+  cursor: pointer;
+  background-color: rgba(127, 255, 212, 0.5);
+}
+
+body {
+  background-color: #f9f2ed;
+}
